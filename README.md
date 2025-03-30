@@ -4,7 +4,9 @@
 A real-time geospatial tracking application that transforms smartphones into IoT sensors using MQTT protocol and Leaflet mapping.
 
 📂 File Structure
+
 ENGO651-Lab5
+
 ├── index.html          # Main application interface
 ├── style.css           # Dark theme styling
 ├── app.js              # Core application logic
