@@ -59,7 +59,7 @@ ENGO651-Lab5
 
 
 ### Prerequisites
-- Modern web browser (Chrome/Firefox recommended)
+- Modern web browser 
 - [MQTTX Client](https://mqttx.app/) installed
 - GitHub account for deployment
 
