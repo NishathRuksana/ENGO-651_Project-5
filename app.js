@@ -6,7 +6,7 @@ let watchId;
 
 // Constants for MQTT topic
 const courseCode = "ENGO651";
-const studentName = "Nishath Ruksana";
+const studentName = "Nishath_Ruksana";
 const baseTopic = `${courseCode}/${studentName}`; // Base MQTT topic
 
 // Initialize Leaflet map
