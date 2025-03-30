@@ -3,6 +3,8 @@
 
 A real-time geospatial tracking application that transforms smartphones into IoT sensors using MQTT protocol and Leaflet mapping.
 
+Live URL of app: https://nishathruksana.github.io/ENGO-651_Project-5/
+
 ![App Screenshot](./image.png)
 
 📂 File Structure
