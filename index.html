@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENGO651 - IoT Geoweb App</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <!-- Paho MQTT Client -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>IoT Controls</h2>
+      </div>
+      <div class="control-card">
+        <h3>MQTT Connection</h3>
+        <div class="input-group">
+          <label for="host">Host</label>
+          <input type="text" id="host" value="test.mosquitto.org" />
+        </div>
+        <div class="input-group">
+          <label for="port">Port</label>
+          <input type="number" id="port" value="8081" />
+        </div>
+        <div class="button-group">
+          <button id="connectBtn" onclick="connect()">Connect</button>
+          <button id="disconnectBtn" onclick="disconnect()" disabled>Disconnect</button>
+        </div>
+      </div>
+      <div class="control-card">
+        <h3>Publish Message</h3>
+        <div class="input-group">
+          <!-- Updated topic value to match baseTopic -->
+          <label for="pubTopic">Topic</label>
+          <input type="text" id="pubTopic" value="ENGO651/Nishath_Ruksana/my_temperature" disabled />
+        </div>
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="3" disabled></textarea>
+        </div>
+        <div class="button-group">
+          <button id="shareBtn" onclick="shareStatus()" disabled>Share Status</button>
+        </div>
+      </div>
+      <div class="status-indicator">
+        <p>
+          Status: <span id="status" class="status-disconnected">Disconnected</span>
+        </p>
+      </div>
+    </aside>
+    <main class="map-container">
+      <div id="map"></div>
+    </main>
+  </div>
+  
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <!-- Application JS -->
+  <script src="app.js"></script>
+</body>
+</html>
